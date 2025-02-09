@@ -2,8 +2,8 @@
 using System;
 using System.Linq;
 
-// Создаем массив из 15 элементов и заполняем его случайными числами от 0 до 99
-int[] points = new int[15];
+// Создаем массив из 20 элементов и заполняем его случайными числами от 0 до 99
+int[] points = new int[20];
 Random random = new Random();
 for (int i = 0; i < points.Length; i++)
 {
