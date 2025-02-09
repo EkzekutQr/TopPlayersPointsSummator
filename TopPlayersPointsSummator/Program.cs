@@ -2,8 +2,17 @@
 using System;
 using System.Linq;
 
-// Массив очков команд (пример данных)
-int[] points = { 45, 67, 34, 56, 78, 89, 23, 54, 76, 65, 43, 32, 21, 12, 34, 56, 78, 90, 87, 65 };
+// Создаем массив из 15 элементов и заполняем его случайными числами от 0 до 99
+int[] points = new int[15];
+Random random = new Random();
+for (int i = 0; i < points.Length; i++)
+{
+    points[i] = random.Next(0, 100); // Случайное число от 0 до 99
+}
+
+// Выводим массив в консоль
+Console.WriteLine("Сгенерированный массив очков:");
+Console.WriteLine(string.Join(", ", points));
 
 // Сортируем массив по убыванию
 var sortedPoints = points.OrderByDescending(p => p).ToArray();
